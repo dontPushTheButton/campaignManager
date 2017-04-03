@@ -23,6 +23,10 @@ namespace WebApplication1
 					id = UrlParameter.Optional
 				}
 			);
+			routes.MapRoute(
+				name: "Hello",
+				url: "{controller}/{action}/{name}/{id}"
+			);
 		}
 	}
 }
